@@ -31,12 +31,12 @@ function sheet_Formulas_Fill(sheet) {
   // если в ячейке формула, то протягивает её вниз
   var range = sheet.getRange(2, 1, 1, sheet.getLastColumn());
   var formulas = range.getFormulas()[0];
+  var lastRow = sheet.getLastRow();
 
   for (var i = 0; i < formulas.length; i++) {
     var formula = formulas[i];
     if (formula !== "") {
       var column = String.fromCharCode(65 + i);
-      var lastRow = sheet.getLastRow();
       var fillRange = sheet.getRange(column + "2:" + column + lastRow);
       fillRange.setFormula(formula);
     }
