@@ -14,10 +14,10 @@ function range_Replace_In_Cells(range, regex, replacement) {
     const values = range.getValues();
 
     for (let row = 0; row < values.length; row++) {
-        for (let j = 0; j < values[row].length; j++) {
-            const cellValue = values[row][j].toString();
+        for (let col = 0; col < values[row].length; col++) {
+            const cellValue = values[row][col].toString();
             if (cellValue.match(regex)) {
-                sheet.getRange(row + 1, j + 1)
+                sheet.getRange(row + 1, col + 1)
                     .setValue(cellValue
                         .replace(regex, replacement));
             }
