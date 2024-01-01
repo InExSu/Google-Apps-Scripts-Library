@@ -1,7 +1,4 @@
 function z() {
-    if ("DEBUG" in global) {
-        // DEBUG объявлена
-
         if (typeof DEBUG !== 'undefined') {
             // DEBUG определена, ваш код здесь
             console.log('DEBUG is defined:', DEBUG);
