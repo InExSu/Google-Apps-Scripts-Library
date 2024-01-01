@@ -1,3 +1,4 @@
+
 function z() {
         if (typeof DEBUG !== 'undefined') {
             // DEBUG определена, ваш код здесь
@@ -7,4 +8,3 @@ function z() {
             console.log('DEBUG is not defined');
         }
     }
-}
