@@ -13,11 +13,11 @@ function range_Replace_In_Cells(range, regex, replacement) {
     const sheet = range.getSheet()
     const values = range.getValues();
 
-    for (let i = 0; i < values.length; i++) {
-        for (let j = 0; j < values[i].length; j++) {
-            const cellValue = values[i][j].toString();
+    for (let row = 0; row < values.length; row++) {
+        for (let j = 0; j < values[row].length; j++) {
+            const cellValue = values[row][j].toString();
             if (cellValue.match(regex)) {
-                sheet.getRange(i + 1, j + 1)
+                sheet.getRange(row + 1, j + 1)
                     .setValue(cellValue
                         .replace(regex, replacement));
             }
