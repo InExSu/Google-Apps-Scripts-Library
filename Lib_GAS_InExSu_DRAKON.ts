@@ -2,9 +2,8 @@
 /*global DEBUG*/
 
 function console_If(msg: string | object) {
-    const newLocal = DEBUG === undefined;
     // item 34
-    if ((newLocal) || (!(DEBUG))) {
+    if ((DEBUG === undefined) || (!(DEBUG))) {
         
     } else {
         // item 39
