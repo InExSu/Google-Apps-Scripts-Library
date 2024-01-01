@@ -3,7 +3,7 @@
 
 function console_If(msg: string | object) {
     // item 34
-    if ((DEBUG === "undefined") || (!(DEBUG))) {
+    if ((DEBUG === undefined") || (!(DEBUG))) {
         
     } else {
         // item 39
