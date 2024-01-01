@@ -2,7 +2,7 @@
 
 function console_If(msg) {
     // item 34
-    if ((typeDEBUG === undefined) || (!(DEBUG))) {
+    if ((typeof DEBUG === "undefined) || (!(DEBUG))) {
         
     } else {
         // item 39
