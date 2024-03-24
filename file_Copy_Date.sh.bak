@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Принимает путь к файлу и путь к папке, 
-# создает копию файла, добавляя к имени дату и время ("2023-11-19 12-13"), 
+# принимает путь к файлу и путь к папке, 
+# создает копию файла, добавляя к имени дату и время 
+# "2023-11-19 12-13"), 
 # и помещает копию файла в указанную папку:
 
-# Вызов:  ./file_Copy_Date.sh PricePaint_Drakon.drn Git_Ignore_BackUps/
+# вызов:  ./file_Copy_Date.sh PricePaint_Drakon.drn Git_Ignore_BackUps/
 
 file_path=$1
 folder_path=$2
@@ -26,11 +27,6 @@ new_file_name="${file_name} ${datetime}${extension}"
 
 # Путь для копии файла
 new_file_path="${folder_path}/${new_file_name}"
-
-# Проверяем существование папки и создаем её, если необходимо
-if [ ! -d "$folder_path" ]; then
-  mkdir -p "$folder_path"
-fi
 
 # Создаем копию файла в указанной папке
 cp "$file_path" "$new_file_path"
