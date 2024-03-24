@@ -8,4 +8,4 @@ git push
 
 clasp push
 
-./file_Copy_Date.sh Lib_GAS_InExSu_DRAKON.drn drn_BackUps
+./file_Copy_Date.sh SBIS_Parser.drn Git_drn_BackUps
