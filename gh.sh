@@ -1,6 +1,7 @@
 #!/bin/bash
 
-git pull
+# дать права на запуск
+# chmod +x ./gh.sh
 
 DATE=$(date "+%Y-%m-%d")
 
